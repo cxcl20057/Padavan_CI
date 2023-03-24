@@ -140,7 +140,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_XRAY=y" >> .config #集成xray执行文件(5.6M左右)，可以代替v2ray，注：如果闪存太小不够还是建议使用v2ray
         echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=y" >> .config #集成trojan执行文件(1.1M左右)
         echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=n" >> .config # simple-obfs混淆插件
-        echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config #SS server
+        echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=y" >> .config #SS server
         echo "CONFIG_FIRMWARE_INCLUDE_KUMASOCKS=y" >> .config #socks5
         #
         echo "CONFIG_FIRMWARE_INCLUDE_IPT2SOCKS=n" >> .config
@@ -161,8 +161,8 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config
         #
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config #阿里DDNS
-        echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=y" >> .config #zerotier ~1.3M
-        echo "CONFIG_FIRMWARE_INCLUDE_CLOUDFLAREDDNS=n" >> .config #CLOUDFLAREDDNS
+        echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
+        echo "CONFIG_FIRMWARE_INCLUDE_CLOUDFLAREDDNS=y" >> .config #CLOUDFLAREDDNS
         echo "CONFIG_FIRMWARE_INCLUDE_NVPPROXY=n" >> .config #NVPPROXY
         echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=n" >> .config #DDNSTO
         echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=n" >> .config #WIREGUARD
